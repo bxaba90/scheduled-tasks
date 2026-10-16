@@ -10,7 +10,7 @@ password = os.environ.get("PASSWORD")
 
 ##################### Extra Hard Starting Project ######################
 
-1. Update the birthdays.csv
+# 1. Update the birthdays.csv
 current_data = {
     "name": ["Aletta", "Mbali"],
     "email": ["bxaba@hotmail.com","bxaba@hotmail.com"],
