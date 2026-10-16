@@ -10,18 +10,18 @@ password = os.environ.get("PASSWORD")
 
 ##################### Extra Hard Starting Project ######################
 
-# 1. Update the birthdays.csv
-# current_data = {
-#     "name": ["Aletta", "Mbali"],
-#     "email": ["bxaba@hotmail.com","bxaba@hotmail.com"],
-#     "year": [1962, 2026],
-#     "month": [4, 10],
-#     "day": [4, 15]
-# }
+1. Update the birthdays.csv
+current_data = {
+    "name": ["Aletta", "Mbali"],
+    "email": ["bxaba@hotmail.com","bxaba@hotmail.com"],
+    "year": [1962, 2026],
+    "month": [4, 10],
+    "day": [4, 16]
+}
 data = pandas.read_csv("birthdays.csv")
-# new_data = pandas.DataFrame(current_data)
-# data.update(new_data)
-# data.to_csv("birthdays.csv", index=False)
+new_data = pandas.DataFrame(current_data)
+data.update(new_data)
+data.to_csv("birthdays.csv", index=False)
 
 # 2. Check if today matches a birthday in the birthdays.csv
 today_date = dt.datetime.now()
