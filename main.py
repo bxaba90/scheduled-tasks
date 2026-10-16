@@ -3,9 +3,10 @@ from tkinter import messagebox
 import pandas
 import random
 import datetime as dt
+import os
 
-my_email = "bxaba90@gmail.com"
-password = "ceth clim mdpa qglm"
+my_email = os.environ.get("MY_EMAIL")
+password = os.environ.get("PASSWORD")
 
 ##################### Extra Hard Starting Project ######################
 
