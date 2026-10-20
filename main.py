@@ -35,13 +35,13 @@ if today in birthday_dict:
         letter = file.read()
         new_letter = letter.replace("[NAME]", birthday_dict.get(today).get("name"))
 
-# 4. Send the letter generated in step 3 to that person's email address.
-with smtplib.SMTP("smtp.gmail.com") as server:
-    server.starttls()
-    server.login(user=my_email, password=password)
-    server.sendmail(to_addrs=birthday_dict.get(today).get("email"), from_addr=my_email, msg=f"Subject:HAPPY BIRTHDAY\n\n{new_letter}")
-    # print("Email sent!")
-    # messagebox.showinfo("HAPPY BIRTHDAY", "Email sent!")
+    # 4. Send the letter generated in step 3 to that person's email address.
+    with smtplib.SMTP("smtp.gmail.com") as server:
+        server.starttls()
+        server.login(user=my_email, password=password)
+        server.sendmail(to_addrs=birthday_dict.get(today).get("email"), from_addr=my_email, msg=f"Subject:HAPPY BIRTHDAY\n\n{new_letter}")
+        # print("Email sent!")
+        # messagebox.showinfo("HAPPY BIRTHDAY", "Email sent!")
 
 
 
